@@ -7,7 +7,7 @@ set(PY_FILES paddle/__init__.py
 if(WITH_GPU)
   SET(PACKAGE_NAME "paddlepaddle-gpu")
 else()
-  SET(PACKAGE_NAME "paddlepaddle")
+  SET(PACKAGE_NAME "paddlepaddle-tiny")
 endif()
 
 set(FLUID_CORE_NAME "core")
