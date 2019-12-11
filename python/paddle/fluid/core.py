@@ -187,11 +187,11 @@ if avx_supported():
             raise e
         else:
             from .. import compat as cpt
-            sys.stderr.write(
-                'WARNING: Do not have avx core. You may not build with AVX, '
-                'but AVX is supported on local machine.\n You could build paddle '
-                'WITH_AVX=ON to get better performance.\n'
-                'The original error is: %s\n' % cpt.get_exception_message(e))
+            #sys.stderr.write(
+            #    'WARNING: Do not have avx core. You may not build with AVX, '
+            #    'but AVX is supported on local machine.\n You could build paddle '
+            #    'WITH_AVX=ON to get better performance.\n'
+            #    'The original error is: %s\n' % cpt.get_exception_message(e))
             load_noavx = True
 else:
     load_noavx = True
