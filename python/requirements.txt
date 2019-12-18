@@ -4,4 +4,5 @@ numpy>=1.12 ; python_version>="3.5"
 protobuf>=3.1.0
 graphviz
 six
+objgraph
 decorator
